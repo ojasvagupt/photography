@@ -1,0 +1,16 @@
+@media (max-width: 480px){
+    .hero-container{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* ============= PORTFOLIO =========== */
+    .portfolio-card-item{
+        flex-basis: 100%;
+    }
+
+    /* =================== CONTACTS ============ */
+    .contacts-info-wrapper .contacts-form{
+        flex-basis: 100%;
+    }
+}

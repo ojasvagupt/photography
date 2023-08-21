@@ -1,0 +1,15 @@
+:root{
+    --main-color: #A52424;
+    --sec-color: #101010;
+
+    --fz-s: clamp(14px, calc(18 / 1210 * 100vw), 18px);
+    --fz-m: clamp(16px, calc(22 / 1210 * 100vw), 22px);
+    --fz-l: clamp(24px, calc(64 / 1210 * 100vw), 64px);
+    --fz-xl: clamp(28px, calc(72 / 1210 * 100vw), 72px);
+
+
+    --lh-s: 130%;
+    --lh-m: 140%;
+    --lh-l: 116%;
+    --lh-xl: 120%;
+}

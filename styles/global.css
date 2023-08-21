@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--fz-s);
+    line-height: var(--lh-s);
+    letter-spacing: 1px;
+    color: var(--sec-color);
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container{
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 30px;
+}

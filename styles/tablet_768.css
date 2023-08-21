@@ -1,0 +1,46 @@
+@media (max-width: 768px){
+    /* =================== HEADER =============== */
+    .header-nav{
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .header-nav-list {        
+        justify-content: center;
+    }
+    
+    .section-hero{
+        margin-top: 16px;
+    }
+
+    /*  ==================== ABOUT ================ */
+    .about-info-left{
+        display: none;
+    }
+    
+    .about-info-right{
+        flex-basis: 100%;
+    }
+
+
+    /* ================== PRICES ================= */
+    .prices-cards-list{
+        flex-direction: column;
+    }
+
+    .prices-card-item{
+        margin-top: 30%;
+        flex-basis: 100%;
+    }
+
+    /* ================== CONTACTS =============== */
+
+    .contacts-imgs-wrapper{
+        display: none;
+    }
+
+    .contacts-info-wrapper .contacts-form{
+        flex-basis: 70%;
+    }
+}
+

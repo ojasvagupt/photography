@@ -1,0 +1,443 @@
+.section-title {
+    font-size: var(--fz-l);
+    line-height: var(--lh-l);
+}
+
+.section-subtitle {
+    font-size: var(--fz-m);
+    line-height: var(--lh-m);
+    font-weight: 600;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: clamp(10px, calc(20 / 1210 * 100vw), 20px) clamp(20px, calc(40 / 1210 * 100vw), 40px);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    color: var(--main-color);
+    transition: .7s;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* ================= HEADER ================= */
+.header {
+    padding-top: 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.header-container .logo-link img,
+.footer-container .logo-link img {
+    display: block;
+    height: clamp(30px, calc(84 / 1210 * 100vw), 84px);
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(10px, calc(54 / 1210 * 100vw), 54px);
+}
+
+.header-nav-item .header-nav-link {
+    color: var(--sec-color);
+    transition: 0.1s;
+}
+
+.header-nav-item .header-nav-link:hover {
+    color: var(--main-color);
+}
+
+.header-container .header-contact-link {
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+.header-container .header-contact-link:hover {
+    text-shadow: 0 0 1px var(--main-color);
+}
+
+/* ========================= HERO ===================== */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 53px;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: calc(40% - 27px);
+}
+
+.hero-img-wrapper {
+    flex-basis: calc(60% - 27px);
+}
+
+.hero-container .hero-img-wrapper img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero-info .main-title {
+    font-size: var(--fz-xl);
+    line-height: var(--lh-xl);
+}
+
+.hero-container .hero-info .section-subtitle {
+    margin-top: clamp(4px, calc(20 / 1210 * 100vw), 20px);
+}
+
+.hero-container .hero-info .btn {
+    margin-top: clamp(8px, calc(60 / 1210 * 100vw), 60px);
+}
+
+/* ====================== ABOUT ===================== */
+.section-about {
+    margin-top: clamp(40px, calc(150 / 1210 * 100vw), 150px);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-info-wrapper {
+    display: flex;
+    gap: clamp(20px, calc(100 / 1210 * 100vw), 100px);
+}
+
+.about-info-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 40px;
+    padding: 8% 10px;
+    flex-basis: calc(30% - 75px);
+}
+
+.about-info-left .about-info-name {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.about-info-left .img-wrapper {
+    position: absolute;
+    top: -30px;
+    left: 10%;
+    width: 80%;
+}
+
+.about-info-left .img-wrapper img,
+.about-info-right .img-wrapper img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.about-info-right .img-wrapper .about-info-right-bg,
+.about-info-left {
+    box-shadow: 0 2px 5px 4px #ebebeb;
+}
+
+.about-info-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(70% - 75px);
+}
+
+.about-info-right .section-subtitle {
+    color: var(--main-color);
+}
+
+.about-info-right .about-info-text {
+    margin-top: 12px;
+    text-align: justify;
+}
+
+.about-info-right .section-subtitle,
+.about-info-right .about-info-text {
+    flex-basis: 100%;
+}
+
+.about-info-right .img-wrapper {
+    position: relative;
+    margin-top: 40px;
+    flex-basis: 95%;
+}
+
+.about-info-right .img-wrapper .about-info-right-bg {
+    position: absolute;
+    top: -30px;
+    bottom: -30px;
+    left: 15%;
+    right: -30px;
+}
+
+.about-info-right .img-wrapper img {
+    position: relative;
+    z-index: 10;
+}
+
+/* ==================== PORTFOLIO ============= */
+
+.section-portfolio {
+    margin-top: clamp(70px, calc(180 / 1210 * 100vw), 180px);
+}
+
+.portfolio-cards-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: clamp(20px, calc(500 / 1210 * 100vw), 50px);
+}
+
+.portfolio-card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 30%;
+}
+
+.portfolio-img-wrapper {
+    width: 100%;
+    transition: 1s;
+}
+
+.portfolio-img-wrapper:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.portfolio-card-item .portfolio-img-wrapper img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+.portfolio-card-text {
+    text-align: justify;
+}
+
+.portfolio-card-btn {
+    align-self: flex-start;
+}
+
+/* ====================== PRICES =================== */
+.section-prices {
+    margin-top: clamp(40px, calc(150 / 1210 * 100vw), 150px);
+}
+
+.prices-cards-list {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(20px, calc(100 / 1210 * 100vw), 100px);
+}
+
+.prices-card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-basis: 45%;
+    box-shadow: 0 2px 5px 4px #ebebeb;
+    padding: 25px 40px;
+    margin-top: 14%;
+}
+
+.prices-card-item .prices-img-wrapper {
+    position: relative;
+    padding-bottom: 40%;
+    width: 75%;
+    align-self: center;
+    transition: 1s;
+}
+
+.prices-card-item .prices-img-wrapper:hover {
+    transform: scale(1.05, 1.05);
+}
+
+
+.prices-card-item .prices-img-wrapper img {
+    top: -85%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+    box-shadow: 2px 4px 10px 1px rgb(35 35 35 / 15%);
+}
+
+.prices-card-service {
+    color: var(--main-color);
+    text-align: center;
+}
+
+.prices-card-info .card-info-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.card-info-item .info-item-text {
+    word-break: break-word;
+}
+
+.prices-card-info .card-info-item:not(.prices-card-info .card-info-item:first-child) {
+    margin-top: 10px;
+}
+
+.card-info-item .info-item-value {
+    text-align: right;
+}
+
+.price-and-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-and-btn-wrapper .price {
+    font-size: clamp(16px, calc(36 / 1210 * 100vw), 36px);
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+/* ===================== CONTACTS ============= */
+.section-contacts {
+    margin-top: clamp(40px, calc(150 / 1210 * 100vw), 150px);
+}
+
+.contacts-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(20px, calc(100 / 1210 * 100vw), 100px);
+    margin-top: clamp(10px, calc(50 / 1210 * 100vw), 50px);;
+}
+
+.contacts-info-wrapper .contacts-imgs-wrapper,
+.contacts-info-wrapper .contacts-form {
+    flex-basis: 45%;
+}
+
+.contacts-imgs-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contacts-img-wrapper {
+    flex-basis: 50%;
+    box-shadow: 2px 4px 10px 1px rgba(35, 35, 35, 0.15);
+}
+
+.contacts-info-wrapper .contacts-imgs-wrapper img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, calc(40 / 1210 * 100vw), 40px);
+}
+
+.contacts-form .contacts-name,
+.contacts-form .contacts-email,
+.contacts-form .contacts-msg {
+    border: 1px solid rgba(35, 35, 35, 0.85);
+    padding: 18px 20px;
+}
+
+.contacts-form input::placeholder, .contacts-form .contacts-msg {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--fz-s);
+    line-height: var(--lh-s);
+    color: rgba(35, 35, 35, 0.35);
+    letter-spacing: 0.05em;
+}
+
+.contacts-form .contacts-msg {
+    width: 100%;
+    height: 40%;
+    resize: none;
+}
+
+.contacts-form .btn {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--fz-s);
+    line-height: var(--lh-s);
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.contacts-form .btn:hover {
+    background-color: var(--main-color);
+}
+
+
+/* ========================== FOOTER =================== */
+.footer {
+    margin-top: clamp(30px, calc(100 / 1210 * 100vw), 100px);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 36px 30px;
+    border-top: 1px solid #232323;
+}
+
+.footer-socials-list {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(30px, calc(54 / 1210 * 100vw), 54px);
+}
+
+.footer-socials-list .socials-list-item {
+    width: 30px;
+    height: 30px;
+}
+
+.socials-list-item .socials-link svg {
+    display: block;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.socials-list-item .socials-link svg {
+    fill: var(--sec-color);
+}
+
+.socials-list-item .socials-link svg:hover {
+    fill: var(--main-color);
+}
+
+.footer-container .footer-contact-link {
+    color: var(--main-color);
+    transition: 0.6s;
+}
+
+.footer-container .footer-contact-link:hover {
+    text-shadow: 0 0 1px var(--main-color);
+}
